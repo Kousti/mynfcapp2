@@ -8,7 +8,14 @@
     "userInterfaceStyle": "light",
     "plugins": [
       "expo-dev-client",
-      "react-native-nfc-manager"
+      [
+        "react-native-nfc-manager",
+        {
+          "nfcPermission": "Scan NFC tags to read or write data in the app",
+          "iso7816SelectIdentifiers": ["D2760000850101"],
+          "includeNdefEntitlement": false
+        }
+      ]
     ],
     "newArchEnabled": true,
     "splash": {
@@ -19,8 +26,15 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.srknuu.mynfcapp",
+      "entitlements": {
+        "com.apple.developer.nfc.readersession.formats": ["ISO7816"],
+        "com.apple.developer.nfc.readersession.iso7816.select-identifiers": [
+          "D2760000850101"
+        ]
+      },
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NFCReaderUsageDescription": "Scan NFC tags to read or write data in the app"
       }
     },
     "android": {
