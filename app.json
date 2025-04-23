@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "my-nfc-app",
+    "slug": "my-nfc-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-dev-client",
+      "react-native-nfc-manager"
+    ],
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.srknuu.mynfcapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.srknuu.mynfcapp",
+      "permissions": [
+        "android.permission.NFC"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2c4c4bd2-b1b5-452b-9b1b-5edbb45e9fe5"
+      }
+    }
+  }
+}
