@@ -9,12 +9,7 @@
     "plugins": [
       "expo-dev-client",
       [
-        "react-native-nfc-manager",
-        {
-          "nfcPermission": "Scan NFC tags to read or write data in the app",
-          "iso7816SelectIdentifiers": ["D2760000850101"],
-          "includeNdefEntitlement": false
-        }
+        "react-native-nfc-manager"
       ]
     ],
     "newArchEnabled": true,
