@@ -26,12 +26,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.srknuu.mynfcapp",
-      "entitlements": {
-        "com.apple.developer.nfc.readersession.formats": ["ISO7816"],
-        "com.apple.developer.nfc.readersession.iso7816.select-identifiers": [
-          "D2760000850101"
-        ]
-      },
+      "entitlements": {},
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
         "NFCReaderUsageDescription": "Scan NFC tags to read or write data in the app"
